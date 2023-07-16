@@ -108,6 +108,45 @@ main{
           font-weight: 700;
 }
 
+/* facts section */
+.facts-card-container {
+          display: flex;
+          justify-content: space-around;
+}
+.facts-card-container .card{
+          border-radius: 8PX;
+          border: 1PX solid #FF900E;
+          text-align: center;
+          padding: 30px 30px;
+       
+}
+.facts-card-container .card-title{
+          font-weight: 600;
+          font-size: 1.25rem;
+          margin-top: 5px;
+}
+.facts-card-container .cord-stats{
+          font-size: 2.8rem;
+          color: #424242;
+          margin-top: 10px;
+          margin-bottom: 10px;
+}
+
+/*sponsors  style*/
+
+.sponsors{
+          text-align: center;
+}
+.sponsores-img-container{
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 40px;
+}
+..sponsores-img-container img{
+          width: 165px;
+}
 
 
 /* responsive media queries */
@@ -116,26 +155,36 @@ main{
           header{
                     padding: 20px;
           }
+
           nav,
-          .temas-container
+          .temas-container,
+          .facts-card-container ,
+          .sponsores-img-container
           {
                     flex-direction: column;
           }
           .teams-img-container{
                     grid-template-columns: 1fr;
           }
-          .temas-content{
+          .temas-content, .facts-card-container {
                     padding-left: 20px;
                     padding-right: 20px;
-                 
+          }
           
+          .facts-card-container {
+                    gap: 20px;
+          }
 }
+
 /* tablet or medium devices */
 @media screen and (min-width:576px) and (max-width: 960px){
           header{
                     padding: 50px;
           }
-          nav, .temas-container{
+          nav, 
+          .temas-container,
+          .sponsores-img-container
+          {
                     flex-direction: column;
           }
           
