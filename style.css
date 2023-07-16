@@ -1,17 +1,21 @@
 /* worck sench fond */
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Open+Sans:wght@700&family=Passions+Conflict&family=Poppins:ital,wght@1,500&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Open+Sans:wght@700&family=Passions+Conflict&family=Poppins:ital,wght@1,500&family=Work+Sans:wght@400;500;600;700;800&display=swap');   
 *{      
 font-family: 'Work Sans', sans-serif;
 }
+
+.text-light-gray{
+          color: #727272;
+}
 .btn-primary{
-border-radius: 8px;
-color: #fff;
-font-size: 1.25rem;
-background: #FF900E;
-padding: 20px 25px;
-color: #fff;
-cursor: pointer;
-border: 0;
+   border-radius: 8px;
+   color: #fff;
+   font-size: 1.25rem;
+   background: #FF900E;
+   padding: 20px 25px;
+   color: #fff;
+   cursor: pointer;
+   border: 0;
 
 }
 
@@ -59,9 +63,7 @@ nav li a{
           color: #131313;
 }
 
-.banner-description{
-          color: #727272;
-}
+
 
 .banner-img{
           margin-top: 20px;
@@ -69,32 +71,11 @@ nav li a{
           
 }
 
-/* responsive media queries */
-/* mobile devices */
-@media screen and (max-width: 576px) {
-          header{
-                    padding: 20px;
-          }
-          nav{
-                    flex-direction: column;
-          }
-          
-}
-/* tablet or medium devices */
-@media screen and (min-width:576px) and (max-width: 960px){
-          header{
-                    padding: 50px;
-          }
-          nav{
-                    flex-direction: column;
-          }
-          
-}
 
 /* meine style */
 main{
           max-width: 1440px;
-          margin: 0 auto;
+          margin: 70px;
 }
 /* teams style */
 .temas-container{
@@ -124,4 +105,37 @@ main{
 .teams-title .text-features{
           color: #FF900E;
           font-weight: 700;
+}
+
+
+
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+          header{
+                    padding: 20px;
+          }
+          nav,
+          .temas-container
+          {
+                    flex-direction: column;
+          }
+          .teams-img-container{
+                    grid-template-columns: 1fr;
+          }
+          .temas-content{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                 
+          
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width: 960px){
+          header{
+                    padding: 50px;
+          }
+          nav, .temas-container{
+                    flex-direction: column;
+          }
+          
 }
